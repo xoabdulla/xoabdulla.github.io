@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="profile">
+            <h2>Profile</h2>
+            <p id="welcomeMessage"></p>
+            <p id="fullName"></p>
+            <p id="userEmail"></p>
+            <h2>Dashboard</h2>
+            <div class="charts-container">
+            <h3>Audit Ratio</h3>
+            <div class="graph">
+                <svg id="projectRatioGraph" width="150" height="150" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" fill="transparent" stroke="#e0e0e0" stroke-width="10" />
+                    <path id="ratioPath" d="M50 5 A45 45 0 0 1 50 95" stroke="#4CAF50" stroke-width="10" fill="transparent" />
+                    <text x="50" y="50" text-anchor="middle" dy=".3em" font-size="20" fill="#333"></text>
+                    <path id="leftHalf" d="M50 5 A45 45 0 0 0 50 95" fill="transparent" />
+                    <path id="rightHalf" d="M50 5 A45 45 0 0 1 50 95" fill="transparent" />
+                </svg>
+                <p>Ratio</p>
+                <div id="hoverDetails" style="display: none;"></div>
+            </div>
+            <h3>XP Earned (Last 6 Months)</h3>
+            <div class="graph-container">
+                <svg id="xpBarChart"></svg>
+            </div>
+        </div>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

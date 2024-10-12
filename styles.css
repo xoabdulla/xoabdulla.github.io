@@ -1,0 +1,116 @@
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #9290C3;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+h2{
+    color: #070F2B;
+}
+
+p {
+    color: #1B1A55;
+}
+
+#profile {
+    padding: 20px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #070F2B;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+button {
+    width: auto;
+    padding: 8px 16px;
+    font-size: 14px;
+    margin: 20px auto 0;
+    display: block;
+}
+
+button:hover {
+    background-color: #9290C3;
+}
+
+#error {
+    color: red;
+}
+
+.graph {
+    text-align: center;
+}
+
+#hoverDetails {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.dashboard-container {
+    display: flex;
+    align-items: center;
+}
+
+.graph {
+    width: 150px;
+    margin-right: 20px;
+}
+
+.audit-details {
+    flex-grow: 1;
+}
+
+.graph-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+#xpBarChart {
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.bar:hover {
+    fill: #070F2B;
+}
+
+.charts-container {
+    border: 2px solid #1B1A55;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
